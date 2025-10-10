@@ -1,0 +1,75 @@
+:root {
+  --cream: #F8E8D2;        /* Text */
+  --orange: #B57012;       /* Title */
+  --dark-brown: #20180C;   /* Background */
+  --coffee: #5F4B2B;       /* Hover */
+  --latte: #A68F67;        /* Link */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/rigata');
+                
+
+/* === Global site style === */
+body {
+  background-color: var(--dark-brown);
+  color: var(--cream);
+  font-family: 'Georgia', serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 18px; /* base size */
+  line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Tahoma', serif;
+  color: var(--orange);
+}
+
+/* Custom font sizing (based on your design) */
+h1 { font-size: 135px; }
+h2 { font-size: 64px; }
+h3 { font-size: 48px; }
+h4 { font-size: 36px; }
+
+p, li {
+  font-size: 18px;
+}
+
+/* Links */
+a {
+  color: var(--latte);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--coffee);
+  text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--coffee) !important;
+}
+
+.nav-link {
+  color: var(--cream) !important;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: var(--latte) !important;
+}
+
+.bg-brown { background-color: var(--dark-brown); }
+.text-latte { color: var(--latte); }
+.btn-latte {
+  background-color: var(--latte);
+  color: var(--coffee);
+  border: none;
+}
+.btn-latte:hover {
+  background-color: var(--coffee);
+  color: var(--cream);
+}
