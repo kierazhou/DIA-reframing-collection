@@ -12,11 +12,22 @@
 
     <!-- Our custom CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- raleway Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- rigata Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/rigata" rel="stylesheet">
+
 </head>
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg">
+    <nav id="main-navbar" class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand nav-link" href="homepage.html">DIA Reframing Collections</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -35,7 +46,7 @@
 
     <!-- Page content -->
     <main class="container py-5 bg-brown">
-        <h2>Welcome to Reframing Collections: From Geographic Generalizations to Cultural Context</h2>
+        <h1>Reframing Collections: From Geographic Generalizations to Cultural Context</h1>
         <p>（TBD）Reframing Collections addresses a critical gap in how museums present and contextualize their
             collections. Currently, institutions like the Detroit Institute of Arts organize diverse cultural artifacts
             under broad geographic categories such as "Asian Art," which homogenizes distinct cultures, materials, time
@@ -73,7 +84,58 @@
             <li>Google Arts & Culture</li>
             <li>Local Community Organizations</li>
         </ul>
+        <h2>What our visitors say:</h2>
+        <div id="myCarousel" class="carousel slide text-center" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <p>
+                        "Reframing Collections helped me understand the rich diversity within Asian art. The network map made connections I never would have noticed in a traditional museum display!"
+                        <br>
+                        <span style="font-style:normal;">Ava Patel, DIA Museum Visitor</span>
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <p>
+                        "This platform is a game-changer for museum education. The contextual hotspots and 3D models bring objects to life and honor their cultural origins."
+                        <br>
+                        <span style="font-style:normal;">Dr. Samuel Lee, Art Historian</span>
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <p>
+                        "I appreciate how the project moves beyond geographic labels and highlights the stories and techniques behind each piece. It’s a respectful and engaging experience."
+                        <br>
+                        <span style="font-style:normal;">Maria Gomez, Community Organizer</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </main>
+
+    <!-- Footer-->
+    <footer class="py-5 bg-black">
+        <div class="container px-5">
+            <p class="m-0 text-center text-white small">Copyright &copy; DIA Reframing Collections 2025</p>
+        </div>
+    </footer>
 
     <!-- Bootstrap JS + Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

@@ -1,9 +1,9 @@
 :root {
-  --cream: #F8E8D2;        /* Text */
-  --orange: #B57012;       /* Title */
-  --dark-brown: #20180C;   /* Background */
-  --coffee: #5F4B2B;       /* Hover */
-  --latte: #A68F67;        /* Link */
+  --cream: #E4D4B3;        /* Text */
+  --red: #CA3828;       /* Title */
+  --dark-brown: #373634;   /* Background */
+  --coffee: #B3A692;       /* Hover */
+  --latte: #938775;        /* Link */
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
@@ -14,7 +14,7 @@
 body {
   background-color: var(--dark-brown);
   color: var(--cream);
-  font-family: 'Georgia', serif;
+  font-family: 'raleway', serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 18px; /* base size */
@@ -23,12 +23,12 @@ body {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Tahoma', serif;
-  color: var(--orange);
+  font-family: 'RIGATA', serif;
+  color: var(--red);
 }
 
 /* Custom font sizing (based on your design) */
-h1 { font-size: 135px; }
+h1 { font-size: 120px; }
 h2 { font-size: 64px; }
 h3 { font-size: 48px; }
 h4 { font-size: 36px; }
@@ -39,30 +39,45 @@ p, li {
 
 /* Links */
 a {
-  color: var(--latte);
+  color: var(--coffee);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--coffee);
+  color: var(--latte);
   text-decoration: underline;
 }
 
 /* Navbar */
-.navbar {
-  background-color: var(--coffee) !important;
+#main-navbar {
+  background-color: rgba(255, 255, 255, 0); /* Semi-transparent white */
+  transition: background-color 0.5s ease; /* Smooth transition */
+  position: fixed; /* Keep navbar fixed at the top */
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  /* background-color: var(--coffee) !important; */
+}
+
+#main-navbar.scrolled {
+  background-color: #000; /* Solid black when scrolled */
 }
 
 .nav-link {
-  color: var(--cream) !important;
+  color: var(--latte) !important;
   font-weight: 600;
 }
 
 .nav-link:hover {
-  color: var(--latte) !important;
+  color: var(--cream) !important;
 }
 
 .bg-brown { background-color: var(--dark-brown); }
+.bg-cream { background-color: var(--cream); }
+.bg-coffee { background-color: var(--coffee); }
+.bg-red { background-color: var(--red); }
+.bg-latte { background-color: var(--latte); }
+
 .text-latte { color: var(--latte); }
 .btn-latte {
   background-color: var(--latte);
@@ -72,4 +87,29 @@ a:hover {
 .btn-latte:hover {
   background-color: var(--coffee);
   color: var(--cream);
+}
+
+.carousel-control.right, .carousel-control.left {
+  background-image: none;
+  color: #f4511e;
+}
+
+.carousel-indicators li {
+  border-color: #f4511e;
+}
+
+.carousel-indicators li.active {
+  background-color: #f4511e;
+}
+
+.item h4 {
+  font-size: 19px;
+  line-height: 1.375em;
+  font-weight: 400;
+  font-style: italic;
+  margin: 70px 0;
+}
+
+.item span {
+  font-style: normal;
 }

@@ -12,36 +12,61 @@
 
   <!-- Our custom CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- raleway Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- rigata Fonts -->
+  <link href="https://fonts.cdnfonts.com/css/rigata" rel="stylesheet">
 </head>
 
 <body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand nav-link" href="homepage.html">DIA Reframing Collections</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="environmentalScan.html">Environmental Scan</a></li>
+          <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <!-- ====== Team Start ====== -->
-  <section id="team" class="ud-team">
+  <section>
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <div class="ud-section-title mx-auto text-center">
-            <span>Our Team</span>
-            <h2>Meet The Team</h2>
-            <p>
-              There are many variations of passages of Lorem Ipsum available
-              but the majority have suffered alteration in some form.
-            </p>
+            <h1>Meet The Team</h1>
+            <p>We are a team of graduate students and CHI fellows from Michigan State University.</p>
           </div>
         </div>
       </div>
 
-      <div class="row">
+      <div class="row text-center">
         <div class="col-xl-4 col-lg-4 col-sm-6">
           <div class="ud-single-team wow fadeInUp" data-wow-delay=".1s">
             <div class="ud-team-image-wrapper">
               <div class="ud-team-image">
-                <img src="assets/images/team/team-01.png" alt="team" />
+                <img src="assets/images/team-01.png" alt="team pic" />
               </div>
             </div>
             <div>
-              <h5>Xinyue "Kiera" Zhou</h5>
-              <h6>Kiera is a second year PhD student in Educational Psychology and Educational Technology at college of education, Michigan State University.</h6>
+              <h4>Xinyue (Kiera) Zhou</h4>
+              <p>Kiera is a second year PhD student in Educational Psychology and Educational Technology at college of
+                education, Michigan State University.</p>
             </div>
           </div>
         </div>
@@ -49,12 +74,12 @@
           <div class="ud-single-team wow fadeInUp" data-wow-delay=".15s">
             <div class="ud-team-image-wrapper">
               <div class="ud-team-image">
-                <img src="assets/images/team/team-02.png" alt="team" />
+                <img src="assets/images/team-02.png" alt="team pic" />
               </div>
             </div>
             <div>
-              <h5>Ayaat (yoyo) Ismail</h5>
-              <h6>Yoyo is a third year PhD student in English, at Michigan State University.</h6>
+              <h4>Ayaat (Yoyo) Ismail</h4>
+              <p>Yoyo is a third year PhD student in English, at Michigan State University.</p>
             </div>
           </div>
         </div>
@@ -62,20 +87,83 @@
           <div class="ud-single-team wow fadeInUp" data-wow-delay=".2s">
             <div class="ud-team-image-wrapper">
               <div class="ud-team-image">
-                <img src="assets/images/team/team-03.png" alt="team" />
+                <img src="assets/images/team-03.png" alt="team pic" />
               </div>
             </div>
             <div>
-              <h5>Scott Bullock</h5>
-              <h6>Scott Bullock is a seventh-year student in the PhD program in History.</h6>
+              <h4>Scott Bullock</h4>
+              <p>Scott Bullock is a seventh-year student in the PhD program in History.</p>
             </div>
           </div>
         </div>
+      </div>
+    </div>
   </section>
   <!-- ====== Team End ====== -->
+  <!-- ====== Contact Start ====== -->
+  <section id="contact" class="ud-contact py-5">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-6">
+          <div class="card border-0 shadow-sm h-100 bg-transparent">
+            <div class="card-body">
+              <p class="text-uppercase">Contact Us</p>
+              <h4 class="card-title mb-3">Let’s talk — we’d love to hear from you!</h4>
+              <p>Reach out for questions, collaborations, or feedback about the DIA Reframing Collection project.</p>
+              <ul class="list-unstyled mt-4">
+                <li class="mb-3 d-flex">
+                  <span class="me-3 fs-4">📍</span>
+                  <div>
+                    <h6 class="mb-0">Our Location</h6>
+                    <small>LEADR, Old Horticulture, 506 E Circle Dr, East Lansing, MI 48824</small>
+                  </div>
+                </li>
+                <li class="mb-3 d-flex">
+                  <span class="me-3 fs-4">✉️</span>
+                  <div>
+                    <h6 class="mb-0">Email</h6>
+                    <small>info@yourdomain.com<br/>contact@yourdomain.com</small>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card border-0 shadow-sm bg-cream">
+            <div class="card-body">
+              <h3 class="card-title mb-3">Send us a Message</h3>
+              <form class="row g-3 text-black" novalidate>
+                <div class="col-md-6">
+                  <label for="fullName" class="form-label">Full Name*</label>
+                  <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Adam Gelius" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email*</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="example@yourmail.com" required>
+                </div>
+                <div class="col-12">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input type="tel" class="form-control" id="phone" name="phone" placeholder="+1 555 555 5555">
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label">Message*</label>
+                  <textarea class="form-control" id="message" name="message" rows="4" placeholder="Type your message here" required></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary btn-dark w-100">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ====== Contact End ====== -->
 
   <!-- Bootstrap JS + Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
   <!-- Our custom JS -->
   <script src="script.js"></script>
