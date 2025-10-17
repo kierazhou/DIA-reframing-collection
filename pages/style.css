@@ -1,6 +1,6 @@
 :root {
   --cream: #E4D4B3;        /* Text */
-  --red: #CA3828;       /* Title */
+  --blue: #0076BF;       /* Title */
   --dark-brown: #373634;   /* Background */
   --coffee: #B3A692;       /* Hover */
   --latte: #938775;        /* Link */
@@ -12,9 +12,9 @@
 
 /* === Global site style === */
 body {
-  background-color: var(--dark-brown);
+  background-color: black;
   color: var(--cream);
-  font-family: 'raleway', serif;
+  font-family: 'Raleway', sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 18px; /* base size */
@@ -23,12 +23,12 @@ body {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'RIGATA', serif;
-  color: var(--red);
+  font-family: 'Rigata', sans-serif;
+  color: var(--blue);
 }
 
 /* Custom font sizing (based on your design) */
-h1 { font-size: 120px; }
+h1 { font-size: 110px; }
 h2 { font-size: 64px; }
 h3 { font-size: 48px; }
 h4 { font-size: 36px; }
@@ -39,7 +39,7 @@ p, li {
 
 /* Links */
 a {
-  color: var(--coffee);
+  color: var(--blue);
   text-decoration: none;
 }
 
@@ -75,10 +75,12 @@ a:hover {
 .bg-brown { background-color: var(--dark-brown); }
 .bg-cream { background-color: var(--cream); }
 .bg-coffee { background-color: var(--coffee); }
-.bg-red { background-color: var(--red); }
+.bg-blue { background-color: var(--blue); }
 .bg-latte { background-color: var(--latte); }
 
 .text-latte { color: var(--latte); }
+.text-cream { color: var(--cream); }
+.text-blue { color: var(--blue); }
 .btn-latte {
   background-color: var(--latte);
   color: var(--coffee);
