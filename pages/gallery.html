@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,19 +11,19 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             overflow: hidden;
             background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
         }
-        
+
         #canvas-container {
             width: 100vw;
             height: 100vh;
             position: relative;
         }
-        
+
         .info-panel {
             position: absolute;
             top: 20px;
@@ -31,24 +31,24 @@
             background: rgba(255, 255, 255, 0.95);
             padding: 25px;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             max-width: 350px;
             z-index: 10;
         }
-        
+
         .info-panel h1 {
             font-size: 1.5em;
             color: #2c3e50;
             margin-bottom: 10px;
         }
-        
+
         .info-panel p {
             color: #7f8c8d;
             line-height: 1.6;
             font-size: 0.9em;
             margin-bottom: 15px;
         }
-        
+
         .legend {
             position: absolute;
             bottom: 20px;
@@ -56,18 +56,18 @@
             background: rgba(255, 255, 255, 0.95);
             padding: 20px;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             z-index: 10;
             max-width: 250px;
         }
-        
+
         .legend-title {
             font-weight: bold;
             color: #2c3e50;
             margin-bottom: 12px;
             font-size: 1.1em;
         }
-        
+
         .legend-item {
             display: flex;
             align-items: center;
@@ -75,14 +75,14 @@
             margin-bottom: 8px;
             font-size: 0.9em;
         }
-        
+
         .legend-color {
             width: 20px;
             height: 20px;
             border-radius: 50%;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
         }
-        
+
         .controls {
             position: absolute;
             top: 20px;
@@ -90,12 +90,12 @@
             background: rgba(255, 255, 255, 0.95);
             padding: 15px;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             z-index: 10;
             font-size: 0.85em;
             color: #7f8c8d;
         }
-        
+
         .artifact-detail {
             position: absolute;
             bottom: 20px;
@@ -103,36 +103,37 @@
             background: rgba(255, 255, 255, 0.98);
             padding: 25px;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             z-index: 15;
             max-width: 400px;
             display: none;
             max-height: 60vh;
             overflow-y: auto;
         }
-        
+
         .artifact-detail.visible {
             display: block;
             animation: slideUp 0.3s ease-out;
         }
-        
+
         @keyframes slideUp {
             from {
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-        
+
         .artifact-detail h2 {
             color: #2c3e50;
             margin-bottom: 8px;
             font-size: 1.4em;
         }
-        
+
         .artifact-type {
             display: inline-block;
             padding: 5px 12px;
@@ -142,11 +143,11 @@
             margin-bottom: 15px;
             color: white;
         }
-        
+
         .artifact-detail .section {
             margin-bottom: 15px;
         }
-        
+
         .artifact-detail .section-title {
             font-weight: bold;
             color: #34495e;
@@ -155,13 +156,13 @@
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
-        
+
         .artifact-detail .section-content {
             color: #555;
             line-height: 1.6;
             font-size: 0.95em;
         }
-        
+
         .artifact-image {
             width: 100%;
             height: 150px;
@@ -173,14 +174,14 @@
             justify-content: center;
             font-size: 4em;
         }
-        
+
         .connections-list {
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
             margin-top: 8px;
         }
-        
+
         .connection-badge {
             padding: 5px 10px;
             border-radius: 15px;
@@ -188,7 +189,7 @@
             color: white;
             font-weight: 500;
         }
-        
+
         .close-detail {
             position: absolute;
             top: 15px;
@@ -204,11 +205,11 @@
             line-height: 1;
             transition: transform 0.2s;
         }
-        
+
         .close-detail:hover {
             transform: scale(1.1);
         }
-        
+
         .color-code {
             display: inline-block;
             width: 12px;
@@ -216,22 +217,27 @@
             border-radius: 50%;
             margin-right: 5px;
         }
-        
+
         canvas {
             display: block;
         }
     </style>
 </head>
+
+
+
 <body>
     <div id="canvas-container"></div>
-    
+
     <div class="info-panel">
         <h1>🌐 Reframing Collections</h1>
-        <p>This 3D network shows how museum objects connect through multiple dimensions—materials, techniques, themes, cultural practices, and geography.</p>
+        <p>This 3D network shows how museum objects connect through multiple dimensions—materials, techniques, themes,
+            cultural practices, and geography.</p>
         <p><strong>Click any object</strong> to see detailed information and its cultural connections.</p>
-        <p style="font-size: 0.85em; margin-top: 10px;"><strong>Drag:</strong> Rotate • <strong>Scroll:</strong> Zoom</p>
+        <p style="font-size: 0.85em; margin-top: 10px;"><strong>Drag:</strong> Rotate • <strong>Scroll:</strong> Zoom
+        </p>
     </div>
-    
+
     <div class="legend">
         <div class="legend-title">Connection Types</div>
         <div class="legend-item">
@@ -255,18 +261,18 @@
             <span>Geography</span>
         </div>
     </div>
-    
+
     <div class="artifact-detail" id="artifactDetail">
         <button class="close-detail" onclick="closeDetail()">×</button>
         <div id="detailContent"></div>
     </div>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script>
         let scene, camera, renderer, nodes = [], lines = [];
         let isDragging = false;
         let previousMousePosition = { x: 0, y: 0 };
-        
+
         const artifactDetails = {
             0: {
                 name: "Jade Buddha Statue",
@@ -334,7 +340,7 @@
                 significance: "Demonstrates the Japanese mastery of lacquerwork and the deep connection between performance, spirituality, and artistic expression."
             }
         };
-        
+
         const nodeData = [
             // Museum Objects (center cluster)
             { name: "Jade Buddha", type: "object", x: 0, y: 2, z: 0, id: 0 },
@@ -342,33 +348,33 @@
             { name: "Silk Scroll", type: "object", x: -1, y: 0, z: 1, id: 2 },
             { name: "Ceramic Bowl", type: "object", x: 0, y: -1, z: -2, id: 3 },
             { name: "Noh Mask", type: "object", x: 2, y: 0, z: 1, id: 4 },
-            
+
             // Material nodes
             { name: "Jade", type: "material", x: -3, y: 3, z: 2 },
             { name: "Bronze", type: "material", x: 3, y: 2, z: -1 },
             { name: "Silk", type: "material", x: -2, y: -2, z: 3 },
-            
+
             // Technique nodes
             { name: "Carving", type: "technique", x: 4, y: 1, z: 2 },
             { name: "Casting", type: "technique", x: 3, y: -2, z: -2 },
             { name: "Weaving", type: "technique", x: -3, y: 1, z: -3 },
-            
+
             // Theme nodes
             { name: "Spirituality", type: "theme", x: 2, y: 4, z: -2 },
             { name: "Daily Life", type: "theme", x: -4, y: 0, z: 1 },
             { name: "Power", type: "theme", x: 1, y: -3, z: 3 },
-            
+
             // Cultural Practice nodes
             { name: "Ritual", type: "cultural", x: -2, y: 3, z: -2 },
             { name: "Trade", type: "cultural", x: 3, y: 3, z: 1 },
             { name: "Ceremony", type: "cultural", x: -1, y: -4, z: 0 },
-            
+
             // Geography nodes
             { name: "Silk Road", type: "geography", x: 4, y: -1, z: -3 },
             { name: "Maritime Route", type: "geography", x: -4, y: -2, z: -1 },
             { name: "River Valley", type: "geography", x: 2, y: -2, z: 4 }
         ];
-        
+
         const connections = [
             [0, 5], [0, 11], [0, 13], [0, 16], // Jade Buddha
             [1, 6], [1, 9], [1, 14], [1, 18], // Bronze Vessel
@@ -379,47 +385,47 @@
             [11, 13], [12, 15], [14, 16],
             [16, 17], [15, 18], [14, 19]
         ];
-        
+
         function init() {
             const container = document.getElementById('canvas-container');
-            
+
             scene = new THREE.Scene();
             scene.fog = new THREE.Fog(0x0f2027, 10, 50);
-            
+
             camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
             camera.position.z = 12;
             camera.position.y = 3;
-            
+
             renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
             renderer.setSize(window.innerWidth, window.innerHeight);
             renderer.setClearColor(0x0f2027, 1);
             container.appendChild(renderer.domElement);
-            
+
             const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
             scene.add(ambientLight);
-            
+
             const pointLight1 = new THREE.PointLight(0xffffff, 0.8);
             pointLight1.position.set(10, 10, 10);
             scene.add(pointLight1);
-            
+
             const pointLight2 = new THREE.PointLight(0x667eea, 0.5);
             pointLight2.position.set(-10, -10, -10);
             scene.add(pointLight2);
-            
+
             createNodes();
             createConnections();
-            
+
             renderer.domElement.addEventListener('mousedown', onMouseDown);
             renderer.domElement.addEventListener('mousemove', onMouseMove);
             renderer.domElement.addEventListener('mouseup', onMouseUp);
             renderer.domElement.addEventListener('wheel', onWheel);
             renderer.domElement.addEventListener('click', onClick);
-            
+
             window.addEventListener('resize', onWindowResize);
-            
+
             animate();
         }
-        
+
         function getColorForType(type) {
             const colors = {
                 material: 0x3498db,
@@ -431,32 +437,32 @@
             };
             return colors[type] || 0xffffff;
         }
-        
+
         function createNodes() {
             nodeData.forEach((data, index) => {
-                const geometry = data.type === 'object' 
+                const geometry = data.type === 'object'
                     ? new THREE.SphereGeometry(0.3, 32, 32)
                     : new THREE.SphereGeometry(0.2, 32, 32);
-                
+
                 const material = new THREE.MeshPhongMaterial({
                     color: getColorForType(data.type),
                     emissive: getColorForType(data.type),
                     emissiveIntensity: 0.2,
                     shininess: 100
                 });
-                
+
                 const sphere = new THREE.Mesh(geometry, material);
                 sphere.position.set(data.x, data.y, data.z);
-                sphere.userData = { 
-                    name: data.name, 
-                    type: data.type, 
+                sphere.userData = {
+                    name: data.name,
+                    type: data.type,
                     index: index,
-                    id: data.id 
+                    id: data.id
                 };
-                
+
                 scene.add(sphere);
                 nodes.push(sphere);
-                
+
                 const glowGeometry = new THREE.SphereGeometry(
                     data.type === 'object' ? 0.35 : 0.25, 32, 32
                 );
@@ -469,36 +475,36 @@
                 sphere.add(glow);
             });
         }
-        
+
         function createConnections() {
             connections.forEach(conn => {
                 const start = nodes[conn[0]].position;
                 const end = nodes[conn[1]].position;
-                
+
                 const geometry = new THREE.BufferGeometry().setFromPoints([start, end]);
                 const material = new THREE.LineBasicMaterial({
                     color: 0x667eea,
                     transparent: true,
                     opacity: 0.3
                 });
-                
+
                 const line = new THREE.Line(geometry, material);
                 scene.add(line);
                 lines.push(line);
             });
         }
-        
+
         function onClick(e) {
             const mouse = new THREE.Vector2(
                 (e.clientX / window.innerWidth) * 2 - 1,
                 -(e.clientY / window.innerHeight) * 2 + 1
             );
-            
+
             const raycaster = new THREE.Raycaster();
             raycaster.setFromCamera(mouse, camera);
-            
+
             const intersects = raycaster.intersectObjects(nodes);
-            
+
             if (intersects.length > 0) {
                 const obj = intersects[0].object;
                 if (obj.userData.type === 'object' && obj.userData.id !== undefined) {
@@ -506,11 +512,11 @@
                 }
             }
         }
-        
+
         function showArtifactDetail(id) {
             const detail = artifactDetails[id];
             if (!detail) return;
-            
+
             const colorMap = {
                 blue: '#3498db',
                 green: '#2ecc71',
@@ -518,7 +524,7 @@
                 red: '#e74c3c',
                 yellow: '#f1c40f'
             };
-            
+
             const connectionColors = {
                 'Material': '#3498db',
                 'Technique': '#e74c3c',
@@ -529,7 +535,7 @@
                 'Yellow Sea': '#9b59b6',
                 'East China Sea': '#9b59b6'
             };
-            
+
             let html = `
                 <div class="artifact-image">${detail.emoji}</div>
                 <h2>${detail.name}</h2>
@@ -572,7 +578,7 @@
                     <div class="section-title">Network Connections</div>
                     <div class="connections-list">
             `;
-            
+
             detail.connections.forEach(conn => {
                 let color = '#95a5a6';
                 for (let key in connectionColors) {
@@ -583,69 +589,70 @@
                 }
                 html += `<span class="connection-badge" style="background: ${color}">${conn}</span>`;
             });
-            
+
             html += `</div></div>`;
-            
+
             document.getElementById('detailContent').innerHTML = html;
             document.getElementById('artifactDetail').classList.add('visible');
         }
-        
+
         function closeDetail() {
             document.getElementById('artifactDetail').classList.remove('visible');
         }
-        
+
         window.closeDetail = closeDetail;
-        
+
         function onMouseDown(e) {
             isDragging = true;
             previousMousePosition = { x: e.clientX, y: e.clientY };
         }
-        
+
         function onMouseMove(e) {
             if (isDragging) {
                 const deltaX = e.clientX - previousMousePosition.x;
                 const deltaY = e.clientY - previousMousePosition.y;
-                
+
                 scene.rotation.y += deltaX * 0.005;
                 scene.rotation.x += deltaY * 0.005;
-                
+
                 previousMousePosition = { x: e.clientX, y: e.clientY };
             }
         }
-        
+
         function onMouseUp() {
             isDragging = false;
         }
-        
+
         function onWheel(e) {
             e.preventDefault();
             camera.position.z += e.deltaY * 0.01;
             camera.position.z = Math.max(5, Math.min(25, camera.position.z));
         }
-        
+
         function onWindowResize() {
             camera.aspect = window.innerWidth / window.innerHeight;
             camera.updateProjectionMatrix();
             renderer.setSize(window.innerWidth, window.innerHeight);
         }
-        
+
         function animate() {
             requestAnimationFrame(animate);
-            
+
             if (!isDragging) {
                 scene.rotation.y += 0.001;
             }
-            
+
             const time = Date.now() * 0.001;
             nodes.forEach((node, i) => {
                 const scale = 1 + Math.sin(time + i * 0.5) * 0.1;
                 node.scale.set(scale, scale, scale);
             });
-            
+
             renderer.render(scene, camera);
         }
-        
+
         init();
     </script>
 </body>
+
 </html>
