@@ -37,7 +37,6 @@
                     <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="environmentalScan.html">Environmental Scan</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
                 </ul>
             </div>
@@ -51,11 +50,13 @@
             <h2>Target Audiences</h2>
             <p><strong>Primary Audience:</strong> DIA Museum Visitors</p>
             <p>The 200,000+ people who visit places like the DIA every year who are typically people walking through
-                African, Asian, European, American, Contemporary, Indigenous, Oceanic, and Islamic art galleries who want to
+                African, Asian, European, American, Contemporary, Indigenous, Oceanic, and Islamic art galleries who
+                want to
                 understand the fuller story behind what they're seeing.</p>
             <p>Art enthusiasts and curious minds who want to connect artworks to bigger historical, social, and cultural
                 contexts not just the traditional Western-focused narratives museums have historically told.</p>
-            <p>From middle schoolers to university students on class trips who need information that meets them where they
+            <p>From middle schoolers to university students on class trips who need information that meets them where
+                they
                 are whether they're just starting to learn about a culture or digging deep into research.</p>
             <p>African American, Asian American, Latino/a, Indigenous, Arab American, and other communities looking for
                 authentic representations of their own cultural heritage when they walk through museum doors.</p>
@@ -66,36 +67,126 @@
     </section>
 
     <section class="container-fluid bg-dark text-light py-5">
-        <div class="container pb-5">
+        <div class="container py-5">
             <h2 class="py-5">Data, Information and Content</h2>
-            <h4>How We Show What We Know (And What We're Still Learning)</h4>
-            <p>We use a color-coded system to be transparent about our curatorial process:</p>
-            <ul>
-                <li><strong>Blue:</strong> Basic information to understand the object</li>
-                <li><strong>Green:</strong> Objects with interesting geographic stories or migration histories</li>
-                <li><strong>Orange:</strong> Objects with mixed cultural backgrounds or cross-cultural influences</li>
-                <li><strong>Red:</strong> We're actively rethinking how we frame these objects</li>
-                <li><strong>Yellow:</strong> Waiting on input from cultural experts or community members</li>
-            </ul>
+            <div class="row align-items-center mb-4">
+                <div class="col-md-6">
+                    <h4>How We Show What We Know (And What We're Still Learning)</h4>
+                    <p>We use a color-coded system to be transparent about our curatorial process:</p>
+                    <ul>
+                        <li><strong class="text-primary">Blue:</strong> Basic information to understand the object</li>
+                        <li><strong class="text-success">Green:</strong> Objects with interesting geographic stories or migration histories</li>
+                        <li><strong class="text-warning">Orange:</strong> Objects with mixed cultural backgrounds or cross-cultural influences</li>
+                        <li><strong class="text-danger">Red:</strong> We're actively rethinking how we frame these objects</li>
+                        <li><strong class="text-secondary">Yellow:</strong> Waiting on input from cultural experts or community members</li>
+                    </ul>
+                </div>
 
-            <h4>The Technology</h4>
-            <p>We're using tools that are either free or low-cost for educational and cultural institutions:</p>
-            <ul>
-                <li>For Creating 3D Models: Reality Capture (free for schools)</li>
-                <li>For Displaying Objects: Sketchfab (free for museums) and MetaAR for the AR experience</li>
-                <li>For Mapping Connections: Cytoscape (free and open-source)</li>
-            </ul>
-            <p>The Platform: A website that works on any device, with cloud storage that can grow as we add more
-            institutions. People just visit reframingcollections.org on any browser and everything works and no app
-            downloads or special software needed.</p>
+                <div class="col-md-6">
+                    <div id="aboutCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
 
-        <h4>What It Costs</h4>
-        <p>Most of the software we're using is free for educational and cultural institutions. The real costs are
-            people's time and cloud hosting.</p>
-        <p>Starting Small (1-2 museums, 50-100 objects): $15,000-30,000. A part-time team working with a couple of
-            partner institutions to prove the concept works.</p>
+                        <div class="carousel-inner shadow-sm rounded">
+                            <div class="carousel-item active">
+                                <img src="images/object1.jpg" class="d-block w-100" alt="Object 1">
+                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded px-2 py-1">
+                                    <small>Object 1 — brief caption or credit</small>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="images/object2.jpg" class="d-block w-100" alt="Object 2">
+                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded px-2 py-1">
+                                    <small>Object 2 — brief caption or credit</small>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="images/object3.jpg" class="d-block w-100" alt="Object 3">
+                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded px-2 py-1">
+                                    <small>Object 3 — brief caption or credit</small>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="images/object4.jpg" class="d-block w-100" alt="Object 4">
+                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded px-2 py-1">
+                                    <small>Object 4 — brief caption or credit</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="py-4">The Technology</h4>
+            <div class="row text-center py-5">
+                <!-- Reality Capture Card -->
+                <div class="col-md-4 align-items-center">
+                    <div class="card-body text-light">
+                        <img src="https://dev.epicgames.com/community/api/learning/image/3c95980c-a1df-44ab-9eba-28c1d1f8dc04?resizing_type=fit&width=640&height=640"
+                            alt="Reality Capture Logo" class="mb-3" style="height: 150px;">
+                        <h5 class="card-title">Reality Capture</h5>
+                        <p class="card-text">Professional photogrammetry software for creating detailed 3D models. Free
+                            for educational institutions.</p>
+                    </div>
+                </div>
+                <!-- Sketchfab Card -->
+                <div class="col-md-4">
+                    <div class="card-body text-light">
+                        <img src="https://media.sketchfab.com/models/ed58d0f10c184eef963b65a81408bda3/thumbnails/29bcf17de30d436ab8eca92d17d2bd41/138c3d62162b464e819ae0ce71a59e96.jpeg"
+                            alt="Sketchfab Logo" class="mb-3" style="height: 150px;">
+                        <h5 class="card-title">Sketchfab & MetaAR</h5>
+                        <p class="card-text">Platform for displaying 3D models and creating AR experiences. Free for
+                            museums
+                            and cultural institutions.</p>
+                    </div>
+                </div>
+                <!-- Cytoscape Card -->
+                <div class="col-md-4">
+                    <div class="card-body text-light">
+                        <img src="https://cytoscape.org/images/logo/cy3logoOrange.svg" alt="Cytoscape Logo" class="mb-3"
+                            style="height: 150px;">
+                        <h5 class="card-title">Cytoscape</h5>
+                        <p class="card-text">Open-source software for visualizing complex networks and mapping
+                            connections
+                            between objects.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        
+
+        <div class="container py-4">
+            <div class="card-body text-light">
+                <h4 class="card-title">The Platform</h4>
+                <p class="card-text">A responsive website accessible at reframingcollections.org from any device.
+                    Cloud-based storage enables scalability as more institutions join. No app downloads or special
+                    software required.</p>
+            </div>
+        </div>
+        <div class="container py-4">
+            <h4>What It Costs</h4>
+            <p>Most of the software we're using is free for educational and cultural institutions. The real costs are
+                people's time and cloud hosting.</p>
+            <p>Starting Small (1-2 museums, 50-100 objects): $15,000-30,000. A part-time team working with a couple of
+                partner institutions to prove the concept works.</p>
+        </div>
+        </div>
+
     </section>
 
     <!-- Bootstrap JS + Popper -->
@@ -105,71 +196,72 @@
     <script src="script.js"></script>
 </body>
 
-<!-- Footer-->
-<footer class="py-5 bg-black">
-    <div class="container">
-        <div class="row mb-4">
-            <div class="col-md-5">
-                <div class="d-flex align-items-center mb-2">
-                    <img src="https://dia.org/sites/default/files/inline-images/logo.png" alt="DIA logo"
-                        style="width:48px;height:48px;object-fit:contain;margin-right:12px;">
-                    <h5 class="mb-0">
-                        <a href="homepage.html" class="text-white text-decoration-none">DIA Reframing Collections</a>
-                    </h5>
-                </div>
-                <address class="text-white-50 small mb-0">
-                    Detroit Institute of Arts<br>
-                    5200 Woodward Avenue<br>
-                    Detroit, MI 48202<br>
-                </address>
-            </div>
-            <div class="col-md-2">
-                <h5 class="text-white">Contact</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-white-50">Contact Us</a></li>
-                    <li><a href="team.html" class="text-white-50">Team</a></li>
-                </ul>
-            </div>
-            <div class="col-md-2">
-                <h5 class="text-white">About</h5>
-                <ul class="list-unstyled">
-                    <li><a href="about.html" class="text-white-50">About</a></li>
-                    <li><a href="environmentalScan.html" class="text-white-50">Environmental Scan</a></li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h5 class="text-white">Follow Us</h5>
-                <div class="mt-2">
-                    <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-white me-2"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="row text-center">
-            <h5 class="text-white">Subscribe to our monthly newsletter </h5>
-            <div class="col-md-6 mx-auto text-center">
-                <form class="text-center">
-                    <div class="input-group justify-content-center">
-                        <input type="email" class="form-control" placeholder="Enter your email here" aria-label="Email"
-                            style="max-width: 300px;">
-                        <button class="btn btn-primary" type="submit">Subscribe</button>
+    <!-- Footer-->
+    <footer class="py-5 bg-black">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-5">
+                    <div class="d-flex align-items-center mb-2">
+                        <img src="https://dia.org/sites/default/files/inline-images/logo.png" alt="DIA logo"
+                            style="width:48px;height:48px;object-fit:contain;margin-right:12px;">
+                        <h5 class="mb-0">
+                            <a href="homepage.html" class="text-white text-decoration-none">DIA Reframing
+                                Collections</a>
+                        </h5>
                     </div>
-                </form>
+                    <address class="text-white-50 small mb-0">
+                        Detroit Institute of Arts<br>
+                        5200 Woodward Avenue<br>
+                        Detroit, MI 48202<br>
+                    </address>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="text-white">Contact</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50">Contact Us</a></li>
+                        <li><a href="team.html" class="text-white-50">Team</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="text-white">About</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white-50">About</a></li>
+                        <li><a href="environmentalScan.html" class="text-white-50">Environmental Scan</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="text-white">Follow Us</h5>
+                    <div class="mt-2">
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <h5 class="text-white">Subscribe to our monthly newsletter </h5>
+                <div class="col-md-6 mx-auto text-center">
+                    <form class="text-center">
+                        <div class="input-group justify-content-center">
+                            <input type="email" class="form-control" placeholder="Enter your email here"
+                                aria-label="Email" style="max-width: 300px;">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row text-center">
+                <div class="col">
+                    <p class="text-white-50 small mb-0">
+                        <a href="#" class="text-white-50">Legal Notice </a> |
+                        <a href="#" class="text-white-50"> Privacy Policy </a> |
+                        <a href="#" class="text-white-50"> Cookies </a> |
+                        Copyright &copy; DIA Reframing Collections 2025
+                    </p>
+                </div>
             </div>
         </div>
-        <hr class="my-4">
-        <div class="row text-center">
-            <div class="col">
-                <p class="text-white-50 small mb-0">
-                    <a href="#" class="text-white-50">Legal Notice </a> |
-                    <a href="#" class="text-white-50"> Privacy Policy </a> |
-                    <a href="#" class="text-white-50"> Cookies </a> |
-                    Copyright &copy; DIA Reframing Collections 2025
-                </p>
-            </div>
-        </div>
-    </div>
-</footer>
+    </footer>
 
 </html>
