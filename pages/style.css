@@ -1,9 +1,9 @@
 :root {
-  --cream: #E4D4B3;        /* Text */
-  --red: #CA3828;       /* Title */
-  --dark-brown: #373634;   /* Background */
-  --coffee: #B3A692;       /* Hover */
-  --latte: #938775;        /* Link */
+  --cream: #fdf0d5;        /* Text */
+  --red: #0076BF;       /* Title */
+  --dark-brown: #003049;   /* Background */
+  --coffee: #c1121f;       /* Hover */
+  --latte: #780000;        /* Link */
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
