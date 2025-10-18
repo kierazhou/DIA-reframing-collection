@@ -137,3 +137,25 @@ a:hover {
   position: relative;
   z-index: 1;
 }
+
+.bg-environmental-scan {
+  position: relative;
+  background-image: url('https://dia.org/sites/default/files/styles/responsive_image_full_width_2560_x_auto_/public/2022-07/DIA%20CONTENT-EDIT-16.jpg.webp?itok=4rPlz6lQ');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.bg-environmental-scan::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* grey with 40% opacity */
+  z-index: 0;
+}
+
+.bg-environmental-scan > * {
+  position: relative;
+  z-index: 1;
+}
