@@ -115,3 +115,25 @@ a:hover {
 .item span {
   font-style: normal;
 }
+
+.bg-section {
+  position: relative;
+  background-image: url('https://storage.googleapis.com/historic-detroit-prod/uploads/photo/photo/13976/Y1060046.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.bg-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* grey with 40% opacity */
+  z-index: 0;
+}
+
+.bg-section > * {
+  position: relative;
+  z-index: 1;
+}
